@@ -14,6 +14,7 @@ namespace TechTest.Demo
             shoppingCart.AddToCart(new List<string> { "Apple", "Apple", "Orange", "Apple" });
 
             Console.WriteLine($"Total : {shoppingCart.Checkout()}");
+            Console.WriteLine($"Total after Discount : {shoppingCart.Checkout(true)}");
             Console.ReadLine();
         }
     }
